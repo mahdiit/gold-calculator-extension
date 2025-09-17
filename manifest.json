@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Gold Price Calculator",
+  "version": "1.7",
+  "description": "محاسبه درصد سود و قیمت هر گرم طلا با کلیک روی دکمه افزونه",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "محاسبه قیمت طلا"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

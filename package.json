@@ -1,0 +1,16 @@
+{
+  "name": "gold-price-extension",
+  "version": "1.0.0",
+  "description": "Sample Chrome extension for gold prices - build scripts included",
+  "scripts": {
+    "build:js": "esbuild src/background.js --bundle --minify --outfile=dist/background.js && esbuild src/content.js --bundle --minify --outfile=dist/content.js",
+    "copy:static": "node scripts/copyStatic.js",
+    "build": "npm run build:js && npm run copy:static && node scripts/zip.js",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "pack": "npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.0",
+    "archiver": "^5.3.0"
+  }
+}
