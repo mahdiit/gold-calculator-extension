@@ -20,6 +20,7 @@ Thumbs.db
 
 # IDE/editor config
 .vscode/
+.vs/
 .idea/
 *.swp
 *.swo
